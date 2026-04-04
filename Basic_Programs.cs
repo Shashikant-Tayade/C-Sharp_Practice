@@ -23,5 +23,29 @@ namespace C_Sharp_Practice
             }
             return RevString;
         }
+
+        //Reverse String inplace.
+        //LOGIC:
+        //as a string is immutable, we cannot actually reverse original string inplace.
+        //we take a string from user, convert it to character array,
+        // set first to start and end to the end of the array element. then 
+        // swap the first with last element till start is less than end.
+
+        public string ReverseStringInplace(string ipstring)
+        {
+            char[] charArray = ipstring.ToCharArray();
+            int start = 0;
+            int end = ipstring.Length - 1;
+            while (start < end)
+            {
+                char temp = charArray[start];
+                charArray[start] = charArray[end];
+                charArray[end] = temp;
+                start++;
+                end--;
+            }
+            return new string(charArray);
+        }
+
     }
 }

@@ -15,7 +15,8 @@ namespace C_Sharp_Practice
             Console.WriteLine("Enter the string to reverse : ");
             string ipstring = Console.ReadLine();
 
-            string RevString = Basic_Programs_Obj.ReverseStringUsingBlankString(ipstring);
+            //string RevString = Basic_Programs_Obj.ReverseStringUsingBlankString(ipstring);
+            string RevString = Basic_Programs_Obj.ReverseStringInplace(ipstring);
             Console.WriteLine($"Reversed String = {RevString}");
 
             Console.ReadLine();
