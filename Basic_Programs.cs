@@ -47,5 +47,40 @@ namespace C_Sharp_Practice
             return new string(charArray);
         }
 
+        //Reverse a Number
+        //LOGIC:
+        //take number from user. extract last digit from number using %.
+        // reverse number: rev = (rev * 10) + digit.
+        //remove last digit using /.
+        public int ReverseNumber(int number)
+        {
+            int rev = 0;
+            while (number != 0)
+            {
+                int digit = number % 10;
+                rev = (rev * 10) + digit;
+                number = number / 10;
+            }
+            return rev;
+        }
+
+        //check whether the number is palindrome or not.
+        //LOGIC:
+        //take number from user. store copy of if to the variable.
+        //now reverse the number. if reverse number is same as 
+        //original number, then it is palindrome otherwise it is not.
+        //here we use ReverseNumber method to reverse number.
+        // then compare it with original number. it is is same,
+        // then it is palindrome otherwise not.
+        public bool isPalindrome(int number)
+        {
+            Basic_Programs Basic_ProgramsObj = new Basic_Programs();
+            int reverse = Basic_ProgramsObj.ReverseNumber(number);
+            if (number == reverse)
+            {
+                return true;
+            }
+            return false;
+        }
     }
 }

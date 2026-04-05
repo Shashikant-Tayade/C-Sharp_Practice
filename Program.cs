@@ -12,14 +12,40 @@ namespace C_Sharp_Practice
         {
             Basic_Programs Basic_Programs_Obj = new Basic_Programs();
 
-            Console.WriteLine("Enter the string to reverse : ");
-            string ipstring = Console.ReadLine();
+            //Console.WriteLine("Enter the string to reverse : ");
+            //string ipstring = Console.ReadLine();
 
+            //uncomment to execute ReverseStringUsingBlankString method.
             //string RevString = Basic_Programs_Obj.ReverseStringUsingBlankString(ipstring);
-            string RevString = Basic_Programs_Obj.ReverseStringInplace(ipstring);
-            Console.WriteLine($"Reversed String = {RevString}");
 
-            Console.ReadLine();
+            //uncomment to execute ReverseStringInPlace method.
+            //string RevString = Basic_Programs_Obj.ReverseStringInplace(ipstring);
+
+            //Console.WriteLine($"Reversed String = {RevString}");
+
+            //uncomment to execute ReverseNumber method.
+            //Console.WriteLine("Ente the Number to Reverse it : ");
+            //int number = Convert.ToInt32(Console.ReadLine());
+            //int revNo = Basic_Programs_Obj.ReverseNumber(number);
+            //Console.WriteLine($"Reversed Number = {revNo}");
+            //Console.ReadLine();
+
+            //uncomment to execute isPalindrome method.
+            Console.WriteLine("Enter the number to check for Palindrome : ");
+            int number = Convert.ToInt32(Console.ReadLine());
+
+            bool result = Basic_Programs_Obj.isPalindrome(number);
+            if (result == true)
+            {
+                Console.WriteLine($"{number} is Palindrome");
+            }
+            else
+            {
+                Console.WriteLine($"{number} is not Palindrome");
+            }
+
+
+
         }
     }
 }
