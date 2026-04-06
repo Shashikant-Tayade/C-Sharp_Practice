@@ -31,21 +31,26 @@ namespace C_Sharp_Practice
             //Console.ReadLine();
 
             //uncomment to execute isPalindrome method.
-            Console.WriteLine("Enter the number to check for Palindrome : ");
+            //Console.WriteLine("Enter the number to check for Palindrome : ");
+            //int number = Convert.ToInt32(Console.ReadLine());
+
+            //bool result = Basic_Programs_Obj.IsPalindrome(number);
+            //if (result == true)
+            //{
+            //    Console.WriteLine($"{number} is Palindrome");
+            //}
+            //else
+            //{
+            //    Console.WriteLine($"{number} is not Palindrome");
+            //}
+
+            //Uncomment to run CalculateFactorial code.
+            Console.WriteLine("Enter the Number to calculate it's Factorial : ");
             int number = Convert.ToInt32(Console.ReadLine());
+            int fact = Basic_Programs_Obj.CalculateFactorial(number);
+            Console.WriteLine($"{number} ! = {fact}");
 
-            bool result = Basic_Programs_Obj.isPalindrome(number);
-            if (result == true)
-            {
-                Console.WriteLine($"{number} is Palindrome");
-            }
-            else
-            {
-                Console.WriteLine($"{number} is not Palindrome");
-            }
-
-
-
+            Console.ReadLine();
         }
     }
 }

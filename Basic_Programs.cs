@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Remoting.Channels;
+using System.Runtime.Remoting.Messaging;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -72,7 +74,7 @@ namespace C_Sharp_Practice
         //here we use ReverseNumber method to reverse number.
         // then compare it with original number. it is is same,
         // then it is palindrome otherwise not.
-        public bool isPalindrome(int number)
+        public bool IsPalindrome(int number)
         {
             Basic_Programs Basic_ProgramsObj = new Basic_Programs();
             int reverse = Basic_ProgramsObj.ReverseNumber(number);
@@ -82,5 +84,22 @@ namespace C_Sharp_Practice
             }
             return false;
         }
+
+        // method to calculate factorial of the number.
+        //LOGIC:
+        // take number from user. run the for loop from 1 till
+        // the number entered. now, add the multiplication in 
+        //factorial and return the factorial.
+        public int CalculateFactorial(int number)
+        {
+            int fact = 1;
+            for (int i = 1; i <= number; i++)
+            {
+                fact = fact * i;
+            }
+            return fact;
+        }
     }
+
+
 }
