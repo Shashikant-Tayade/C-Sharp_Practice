@@ -45,10 +45,19 @@ namespace C_Sharp_Practice
             //}
 
             //Uncomment to run CalculateFactorial code.
-            Console.WriteLine("Enter the Number to calculate it's Factorial : ");
-            int number = Convert.ToInt32(Console.ReadLine());
-            int fact = Basic_Programs_Obj.CalculateFactorial(number);
-            Console.WriteLine($"{number} ! = {fact}");
+            //Console.WriteLine("Enter the Number to calculate it's Factorial : ");
+            //int number = Convert.ToInt32(Console.ReadLine());
+            //int fact = Basic_Programs_Obj.CalculateFactorial(number);
+            //Console.WriteLine($"{number} ! = {fact}");
+
+            Console.WriteLine("Enter the term till you want to print fibonacci series : ");
+            int term = Convert.ToInt32(Console.ReadLine());
+            int[] fibseries = Basic_Programs_Obj.PrintFibonacci(term);
+            Console.WriteLine("fibonacci series : ");
+            Console.WriteLine(string.Join(", ", fibseries));
+
+
+
 
             Console.ReadLine();
         }

@@ -99,6 +99,27 @@ namespace C_Sharp_Practice
             }
             return fact;
         }
+
+        public int[] PrintFibonacci(int term)
+        {
+            int[] series = new int[term];
+            int a = 0;
+            int b = 1;
+            if (term >= 1) series[0] = a;
+            if (term >= 2) series[1] = b;
+            for (int i = 2; i < term; i++)
+            {
+                int next = a + b;
+                series[i] = next;
+                a = b;
+                b = next;
+            }
+            return series;
+        }
+
+
+
+
     }
 
 
