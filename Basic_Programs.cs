@@ -117,10 +117,61 @@ namespace C_Sharp_Practice
             return series;
         }
 
+        public bool Check_Prime(int num)
+        {
+            if (num <= 1) return false;
+            for (int i = 2; i <= Math.Sqrt(num); i++)
+            {
+                if (num % i == 0)
+                {
+                    return false;
+                }
+            }
+            return true;
+        }
 
+        public void SwapNumbersWithThirdVariable(int n1, int n2)
+        {
+            Console.WriteLine($"Before Swapping : n1 = {n1}, n2 = {n2}");
+            int temp = n1;
+            n1 = n2;
+            n2 = temp;
+            Console.WriteLine($"After Swapping : n1 = {n1}, n2 = {n2}");
+        }
 
+        public void SwapNumbersWithoutThirdVariable(int n1, int n2)
+        {
+            Console.WriteLine($"Before Swapping : n1 = {n1}, n2 = {n2}");
+            n1 = n1 + n2;
+            n2 = n1 - n2;
+            n1 = n1 - n2;
+            Console.WriteLine($"After Swapping : n1 = {n1}, n2 = {n2}");
+        }
 
+        public void FindMax()
+        {
+            Console.WriteLine("Enter from how many terms you want to find Max ? : ");
+            int size = Convert.ToInt32(Console.ReadLine());
+            int[] TermArray = new int[size];
+            Console.WriteLine($"Enter the {size} Elements : ");
+            for (int i = 0; i < size; i++)
+            {
+                Console.Write($"Enter {i + 1} Element : ");
+                int comp = Convert.ToInt32(Console.ReadLine());
+                TermArray[i] = comp;
+            }
+            Console.WriteLine();
+            int Max = TermArray[0];
+            for (int i = 1; i < TermArray.Length; i++)
+            {
+                if (Max < TermArray[i])
+                {
+                    Max = TermArray[i];
+                }
+
+            }
+            Console.WriteLine($"Max Is : {Max}");
+
+        }
     }
-
-
 }

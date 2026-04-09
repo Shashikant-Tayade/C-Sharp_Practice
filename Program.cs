@@ -50,14 +50,45 @@ namespace C_Sharp_Practice
             //int fact = Basic_Programs_Obj.CalculateFactorial(number);
             //Console.WriteLine($"{number} ! = {fact}");
 
-            Console.WriteLine("Enter the term till you want to print fibonacci series : ");
-            int term = Convert.ToInt32(Console.ReadLine());
-            int[] fibseries = Basic_Programs_Obj.PrintFibonacci(term);
-            Console.WriteLine("fibonacci series : ");
-            Console.WriteLine(string.Join(", ", fibseries));
 
+            //Uncomment to execute Fibonacci series.
 
+            //Console.WriteLine("Enter the term till you want to print fibonacci series : ");
+            //int term = Convert.ToInt32(Console.ReadLine());
+            //int[] fibseries = Basic_Programs_Obj.PrintFibonacci(term);
+            //Console.WriteLine("fibonacci series : ");
+            //Console.WriteLine(string.Join(", ", fibseries));
 
+            //Also can use foreach loop to print series.
+            //foreach (int num in fibseries)
+            //{
+            //    Console.WriteLine(num);
+            //}
+
+            //Uncomment to execute Check_Prime 
+            //Console.WriteLine("Enter the number to check whether it is prime or not : ");
+            //int num = Convert.ToInt32(Console.ReadLine());
+            //bool result = Basic_Programs_Obj.Check_Prime(num);
+            //Console.WriteLine(num + " IsPrime ? : " + result);
+
+            //Uncomment to execute SwapNumbersWithThirdVariable.
+            //Console.WriteLine("Enter the first Number : ");
+            //int n1 = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("Enter the second Number : ");
+            //int n2 = Convert.ToInt32(Console.ReadLine());
+
+            //Basic_Programs_Obj.SwapNumbersWithoutThirdVariable(n1, n2);
+
+            //Uncomment to Execute SwapNumbersWithoutThirdVariable 
+            //Console.WriteLine("Enter the first Number : ");
+            //int n1 = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("Enter the second Number : ");
+            //int n2 = Convert.ToInt32(Console.ReadLine());
+
+            //Basic_Programs_Obj.SwapNumbersWithoutThirdVariable(n1, n2);
+
+            //Uncomment to Execute FindMax
+            Basic_Programs_Obj.FindMax();
 
             Console.ReadLine();
         }
